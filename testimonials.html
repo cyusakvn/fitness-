@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials</title>
+	<link rel="icon" type="image/x-icon" href="images\favicon (1).ico">
+    <style>
+	/* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+ /* Left Sidebar */
+        .left-sidebar {
+            width: 80px; /* Small width */
+            background-color:dodgerblue;
+            height: 100vh;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 260px;
+        }
+
+        .left-sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 14px;
+            text-align: center;
+			
+        }
+
+        .left-sidebar a:hover {
+            background-color: #555;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+			background-image: url("C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\wallpa.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+ 
+        /* Navigation Bar */
+        header {
+            background-image:url('images/background2.png');
+            padding: 50px;
+			margin-left:-40px;
+			position:fixed;
+			width:1930px;
+			height:0px;
+			margin-top:-20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+        }
+
+        nav .logo img {
+            width: 30px;
+        }
+
+        nav .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .menu li {
+            margin-right: 20px;
+        }
+
+        nav .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav .auth-buttons a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav .auth-buttons .cta-button {
+            background-color: #FFA500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .testimonials-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .testimonial h3 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .stars {
+            color: #FFD700;
+        }
+
+        .review {
+            margin-top: 10px;
+        }
+
+        .add-review {
+            margin-top: 30px;
+            padding: 10px 0;
+        }
+
+        .add-review input, .add-review textarea, .add-review select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .add-review button {
+            padding: 10px 15px;
+            background-color: #000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+		      .bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color:dodgerblue;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.bottom-navbar ul li {
+  margin: 0 15px;
+}
+
+.bottom-navbar ul li a img {
+  width: 40px; /* Set icon size */
+  height: auto;
+}
+
+.bottom-navbar ul li a:hover img {
+  opacity: 0.8; /* Add hover effect */
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #3498db;
+}
+
+/* Dark mode variables */
+body.dark-mode {
+  --bg-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --primary-color: #9b59b6;
+}
+
+/* Apply the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <a href="testimonials.html">CT</a>
+        <a href="Assignment 1\results.html">assignment1</a>
+		<a href="assignment2\assignment 2.html">assignment2</a>
+        <a href="Assignment 3\exercise 3.html">assignment3</a>
+    </div>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images\logo.png" alt="COACH KEVIN logo">
+            </div>
+            <ul class="menu">
+			    <li><a href="index.html">home page</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="suggestions.html">suggestions</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button id="themeToggleBtn">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+<div class="testimonials-container">
+    <h2>Client Testimonials</h2>
+
+    <div id="testimonials">
+        <!-- Testimonials will be generated here -->
+    </div>
+
+    <div class="add-review">
+        <h3>Add Your Review</h3>
+        <input type="text" id="name" placeholder="Your Name">
+        <textarea id="review" rows="5" placeholder="Your Review"></textarea>
+        <select id="rating">
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+        <button onclick="addTestimonial()">Submit Review</button>
+    </div>
+</div>
+
+<script>
+    // Sample Testimonials Data
+    const testimonials = [
+        { name: "John Doe", review: "Great trainer! Helped me get fit in just a few months.", rating: 5 },
+        { name: "Jane Smith", review: "Amazing experience, personalized plans worked perfectly for me.", rating: 4 }
+    ];
+
+    // Function to display testimonials
+    function displayTestimonials() {
+        const testimonialContainer = document.getElementById('testimonials');
+        testimonialContainer.innerHTML = '';
+        testimonials.forEach(testimonial => {
+            testimonialContainer.innerHTML += `
+                <div class="testimonial">
+                    <h3>${testimonial.name}</h3>
+                    <div class="stars">${generateStars(testimonial.rating)}</div>
+                    <p class="review">${testimonial.review}</p>
+                </div>
+            `;
+        });
+    }
+
+    // Function to generate star ratings
+    function generateStars(rating) {
+        let stars = '';
+        for (let i = 0; i < rating; i++) {
+            stars += '★';
+        }
+        for (let i = rating; i < 5; i++) {
+            stars += '☆';
+        }
+        return stars;
+    }
+
+    // Function to add new testimonial
+    function addTestimonial() {
+       
+
+        if (name && review) {
+            testimonials.push({ name, review, rating });
+            displayTestimonials();
+
+            // Clear the form
+            document.getElementById('name').value = '';
+            document.getElementById('review').value = '';
+            document.getElementById('rating').value = '5';
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
+
+    // Initial display of testimonials
+    displayTestimonials();
+</script>
+
+  <div class="bottom-navbar">
+  <ul>
+   <li><a href="https://www.facebook.com/"><img src="images\facebook-logo.webp" alt="Facebook"></a></li>
+    <li><a href="https://www.instagram.com/?hl=en"><img src="images\insta-logo.png" alt="Instagram"></a></li>
+    <li><a href="https://www.twitch.tv/"><img src="images\twitch-logo.webp" alt="twitch"></a></li>
+    <li><a href="https://www.youtube.com/results?search_query=ur+cristiano"><img src="images\youtube-logo.png" alt="YouTube"></a></li>
+    <li><a href="https://x.com/"><img src="images\twitter-logo.avif" alt="Twitter"></a></li>
+    <li><a href="https://accounts.snapchat.com/accounts/v2/login"><img src="images\Snapchat-Logo.png" alt="Snapchat"></a></li>
+    <li><a href="https://www.tiktok.com/en/"><img src="images\tiktok-logo.png" alt="TikTok"></a></li>
+  </ul>
+</div>
+
+<script src="javascript\script.js"></script>
+</body>
+</html>

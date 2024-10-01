@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Coach Kevin</title>
+	<link rel="icon" type="image/x-icon" href="images\favicon (1).ico">
+
+    <!-- Internal CSS (same as in index.html) -->
+   <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        /* Left Sidebar */
+        .left-sidebar {
+            width: 80px; /* Small width */
+            background-color:dodgerblue;
+            height: 100vh;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 260px;
+        }
+
+        .left-sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 14px;
+            text-align: center;
+			
+        }
+
+        .left-sidebar a:hover {
+            background-color: #555;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  width: 2000px;
+  background-color: #333; /* Change to your desired color */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.bottom-navbar ul li {
+  margin: 0 15px;
+}
+
+.bottom-navbar ul li a img {
+  width: 40px; /* Set icon size */
+  height: auto;
+}
+
+.bottom-navbar ul li a:hover img {
+  opacity: 0.8; /* Add hover effect */
+}
+
+
+        /* Main content area adjusts to the left sidebar */
+        .main-content {
+            margin-left: 80px; /* Adjust for the left sidebar */
+            width: calc(100% - 80px); /* Calculate remaining width */
+            padding-bottom: 60px; /* Adjust for the bottom sidebar */
+        }
+
+        /* Navigation Bar */
+        header {
+            background-image:url('images/background2.png');
+            padding: 20px;
+			margin-left:-60px;
+			position:fixed;
+			width:1990px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo img {
+            width: 40px;
+        }
+
+        nav .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .menu li {
+            margin-right: 20px;
+        }
+
+        nav .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav .auth-buttons a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav .auth-buttons .cta-button {
+            background-color: #FFA500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #F0F0F0;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .email-form {
+            display: flex;
+        }
+
+        .email-form input {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .email-form button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Features Section */
+        .features {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .features h2 {
+            font-size: 28px;
+        }
+
+        .hero-video video {
+            width: 800px;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color:white;
+            color:black;
+			margin-top:700px;
+        }
+  /* Bottom Navbar */
+        .bottom-navbar {
+            position: fixed;
+            bottom: 0;
+            width: 1900px;
+            background-color:dodgerblue;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottom-navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .bottom-navbar ul li {
+            margin: 0 15px;
+        }
+
+        .bottom-navbar ul li a img {
+            width: 40px;
+            height: auto;
+        }
+
+        .bottom-navbar ul li a:hover img {
+            opacity: 0.8;
+        }
+Services{
+
+al
+text-align:center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.services-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+.service:hover{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+	transition:1s;
+	transform:scale(1.2);
+	
+}
+
+.service img {
+    width: 40%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.service-description {
+    padding: 20px;
+    width: 60%;
+}
+
+.service-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .service img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .service-description {
+        width: 100%;
+    }
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #3498db;
+}
+
+/* Dark mode variables */
+body.dark-mode {
+  --bg-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --primary-color: #9b59b6;
+}
+
+/* Apply the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+    </style>
+</head>
+<body>
+  
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <a href="testimonials.html">CT</a>
+        <a href="Assignment 1\results.html">assignment1</a>
+		<a href="assignment2\assignment 2.html">assignment2</a>
+        <a href="Assignment 3\exercise 3.html">assignment3</a>
+    </div>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images\logo.png" alt="COACH KEVIN logo">
+            </div>
+            <ul class="menu">
+			    <li><a href="index.html">home page</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="suggestions.html">suggestions</a></li>
+            </ul>
+            <div class="auth-buttons">
+           <button id="themeToggleBtn">Toggle Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+<!-- Services Section -->
+<div class="services-section">
+    <h1>Our Services</h1>
+
+    <div class="service">
+        <img src="images\ser1.png" alt="Strength Training">
+        <div class="service-description">
+            <h2>Strength Training</h2>
+            <p>Strength training focuses on building muscle and enhancing endurance. It involves exercises like squats, deadlifts, and bench presses. Personalized plans are available based on your fitness level and goals.</p>
+        </div>
+    </div>
+	<div class="service">
+        <img src="images\ser2.png" alt="Strength Training">
+        <div class="service-description">
+            <h2>Strength Training</h2>
+            <p>Strength training focuses on building muscle and enhancing endurance. It involves exercises like squats, deadlifts, and bench presses. Personalized plans are available based on your fitness level and goals.</p>
+        </div>
+    </div>
+	<div class="service">
+        <img src="images\ser3.png" alt="Strength Training">
+        <div class="service-description">
+            <h2>Strength Training</h2>
+            <p>Strength training focuses on building muscle and enhancing endurance. It involves exercises like squats, deadlifts, and bench presses. Personalized plans are available based on your fitness level and goals.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images\cardio1.png" alt="Cardio Training">
+        <div class="service-description">
+            <h2>Cardio Training</h2>
+            <p>Cardio exercises are great for improving heart health and burning calories. Activities like running, cycling, and HIIT are excellent ways to improve cardiovascular endurance.</p>
+        </div>
+    </div>
+	<div class="service">
+        <img src="images\cardio2.png" alt="Cardio Training">
+        <div class="service-description">
+            <h2>Cardio Training</h2>
+            <p>Cardio exercises are great for improving heart health and burning calories. Activities like running, cycling, and HIIT are excellent ways to improve cardiovascular endurance.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images\fle1.png" alt="Flexibility and Mobility">
+        <div class="service-description">
+            <h2>Flexibility and Mobility</h2>
+            <p>Improve your flexibility and reduce the risk of injury with specialized stretching exercises that target different muscle groups. These exercises also aid in recovery after workouts.</p>
+        </div>
+    </div>
+	 <div class="service">
+        <img src="images\fle2.png" alt="Flexibility and Mobility">
+        <div class="service-description">
+            <h2>Flexibility and Mobility</h2>
+            <p>Improve your flexibility and reduce the risk of injury with specialized stretching exercises that target different muscle groups. These exercises also aid in recovery after workouts.</p>
+        </div>
+    </div>
+	 <div class="service">
+        <img src="images\fle3.png" alt="Flexibility and Mobility">
+        <div class="service-description">
+            <h2>Flexibility and Mobility</h2>
+            <p>Improve your flexibility and reduce the risk of injury with specialized stretching exercises that target different muscle groups. These exercises also aid in recovery after workouts.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <img src="images\nutri.png" alt="Personalized Nutrition">
+        <div class="service-description">
+            <h2>Personalized Nutrition</h2>
+            <p>Get a customized nutrition plan based on your health goals, whether you want to lose weight, gain muscle, or maintain a balanced diet. Plans are tailored to your individual needs and preferences.</p>
+        </div>
+    </div>
+	  <div class="service">
+        <img src="images\nutri3.png" alt="Personalized Nutrition">
+        <div class="service-description">
+            <h2>Personalized Nutrition</h2>
+            <p>Get a customized nutrition plan based on your health goals, whether you want to lose weight, gain muscle, or maintain a balanced diet. Plans are tailored to your individual needs and preferences.</p>
+        </div>
+    </div>
+	  <div class="service">
+        <img src="images\nutri3.png" alt="Personalized Nutrition">
+        <div class="service-description">
+            <h2>Personalized Nutrition</h2>
+            <p>Get a customized nutrition plan based on your health goals, whether you want to lose weight, gain muscle, or maintain a balanced diet. Plans are tailored to your individual needs and preferences.</p>
+        </div>
+</div>
+
+</body>
+</html>
+
+	
+  <div class="bottom-navbar">
+  <ul>
+    <li><a href="https://www.facebook.com/"><img src="images\facebook-logo.webp" alt="Facebook"></a></li>
+    <li><a href="https://www.instagram.com/?hl=en"><img src="images\insta-logo.png" alt="Instagram"></a></li>
+    <li><a href="https://www.twitch.tv/"><img src="images\twitch-logo.webp" alt="twitch"></a></li>
+    <li><a href="https://www.youtube.com/results?search_query=ur+cristiano"><img src="images\youtube-logo.png" alt="YouTube"></a></li>
+    <li><a href="https://x.com/"><img src="images\twitter-logo.avif" alt="Twitter"></a></li>
+    <li><a href="https://accounts.snapchat.com/accounts/v2/login"><img src="images\Snapchat-Logo.png" alt="Snapchat"></a></li>
+    <li><a href="https://www.tiktok.com/en/"><img src="images\tiktok-logo.png" alt="TikTok"></a></li>
+  </ul>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Kevin | Personal Trainer</p>
+    </footer>
+	<script src="javascript\script.js"></script>
+</body>
+</html>

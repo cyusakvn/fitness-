@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainerize Clone</title>
+	<link rel="icon" type="image/x-icon" href="images\favicon (1).ico">
+    
+    <!-- Internal CSS -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Left Sidebar */
+        .left-sidebar {
+            width: 80px;
+            background-color:dodgerblue;
+            height: 1000px;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 260px;
+			margin-bottom:150px;
+        }
+
+        .left-sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .left-sidebar a:hover {
+            background-color: #555;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Bottom Sidebar */
+        .bottom-sidebar {
+            width: 100%;
+            height: 60px;
+            background-color:dodgerblue;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-sidebar a {
+            color: white;
+            margin: 0 20px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .bottom-sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content area adjusts to the left sidebar */
+        .main-content {
+            margin-left: 80px;
+            width: calc(100% - 80px);
+            padding-bottom: 60px;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-image:url('images/background2.png');
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+			height:100px
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo img {
+            width: 40px;
+        }
+
+        nav .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .menu li {
+            margin-right: 20px;
+        }
+
+        nav .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav .auth-buttons a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav .auth-buttons .cta-button {
+            background-color: #FFA500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Suggestion Form Section */
+        .suggestion-form-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            margin: 150px auto; /* Adjust the margin for centering */
+        }
+
+        .suggestion-form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .suggestion-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .suggestion-form label {
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .suggestion-form input,
+        .suggestion-form textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .suggestion-form textarea {
+            resize: none;
+        }
+
+        .suggestion-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .suggestion-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color:dodgerblue;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+		:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #3498db;
+}
+
+/* Dark mode variables */
+body.dark-mode {
+  --bg-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --primary-color: #9b59b6;
+}
+
+/* Apply the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <a href="testimonials.html">CT</a>
+        <a href="Assignment 1\results.html">assignment1</a>
+		<a href="assignment2\assignment 2.html">assignment2</a>
+        <a href="Assignment 3\exercise 3.html">assignment3</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images\logo.png" alt="COACH KEVIN logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+            </ul>
+            <div class="auth-buttons">
+               <button id="themeToggleBtn">Toggle Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Suggestion Form -->
+    <div class="suggestion-form-container">
+        <h2>We value your suggestions!</h2>
+        <form class="suggestion-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            
+            <label for="second-name">Second Name</label>
+            <input type="text" id="second-name" name="second-name" placeholder="Enter your second name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Your Suggestion</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Coach Kevin - All Rights Reserved
+    </footer>
+	<script src="javascript\script.js"></script>
+</body>
+</html>

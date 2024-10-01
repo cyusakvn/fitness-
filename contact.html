@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Coach Kevin</title>
+    <link rel="icon" type="image/x-icon" href="images\favicon (1).ico">
+
+    <!-- Internal CSS -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Left Sidebar */
+        .left-sidebar {
+            width: 80px;
+            background-color:dodgerblue;
+            height: 100vh;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 260px;
+        }
+
+        .left-sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .left-sidebar a:hover {
+            background-color: #555;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-image: url('images/background2.png');
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo img {
+            width: 40px;
+        }
+
+        nav .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .menu li {
+            margin-right: 20px;
+        }
+
+        nav .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav .auth-buttons a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav .auth-buttons .cta-button {
+            background-color: #FFA500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px;
+            margin-top: 100px;
+			
+        }
+
+        .image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            max-width: 30%;
+            margin-left: 40px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            margin-top: auto;
+        }
+
+        /* Social Media Links */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-media a:hover {
+            color: #ddd;
+        }
+
+        /* Bottom Navbar */
+        .bottom-navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: dodgerblue;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottom-navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .bottom-navbar ul li {
+            margin: 0 15px;
+        }
+
+        .bottom-navbar ul li a img {
+            width: 40px;
+            height: auto;
+        }
+
+        .bottom-navbar ul li a:hover img {
+            opacity: 0.8;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text {
+                margin-left: 50px;
+				text-align:center;
+            }
+
+            .image img {
+                max-width: 80%;
+            }
+
+            nav .menu {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .bottom-navbar ul {
+                flex-direction: column;
+            }
+        }
+		/* Root-level CSS variables for light mode */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #3498db;
+}
+
+/* Dark mode variables */
+body.dark-mode {
+  --bg-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --primary-color: #9b59b6;
+}
+
+/* Apply the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+ <a href="testimonials.html">CT</a>
+        <a href="Assignment 1\results.html">assignment1</a>
+		<a href="assignment2\assignment 2.html">assignment2</a>
+        <a href="Assignment 3\exercise 3.html">assignment3</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images\logo.png" alt="COACH KEVIN logo">
+             </div>
+             <ul class="menu">
+                <li><a href="index.html">home page</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+             </ul>
+             <div class="auth-buttons">
+                <button id="themeToggleBtn">Toggle Dark Mode</button>
+           
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <div class="container">
+        <div class="image">
+            <img src="images\call.png" alt="Personal Trainer contacts">
+        </div>
+        <div class="text">
+            <h2>Contact Information</h2>
+            <p>Email: cyusakvn@gmail.com</p>
+            <p>Phone: +250 798281529</p>
+            <p>Location: 123 KACYIRU, KIGALI CITY, RWANDA</p>
+        </div>
+    </div>
+
+    <!-- Bottom Navbar -->
+    <div class="bottom-navbar">
+        <ul>
+            <li><a href="https://www.facebook.com/"><img src="images\facebook-logo.webp" alt="Facebook"></a></li>
+    <li><a href="https://www.instagram.com/?hl=en"><img src="images\insta-logo.png" alt="Instagram"></a></li>
+    <li><a href="https://www.twitch.tv/"><img src="images\twitch-logo.webp" alt="twitch"></a></li>
+    <li><a href="https://www.youtube.com/results?search_query=ur+cristiano"><img src="images\youtube-logo.png" alt="YouTube"></a></li>
+    <li><a href="https://x.com/"><img src="images\twitter-logo.avif" alt="Twitter"></a></li>
+    <li><a href="https://accounts.snapchat.com/accounts/v2/login"><img src="images\Snapchat-Logo.png" alt="Snapchat"></a></li>
+    <li><a href="https://www.tiktok.com/en/"><img src="images\tiktok-logo.png" alt="TikTok"></a></li>
+        </ul>
+    </div>
+	<script src="javascript\script.js"></script>
+</body>
+</html>

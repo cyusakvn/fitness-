@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Assignment 3\CSS\textexercise3.css">
+    <title>Document</title>
+	<style>
+	
+	 body{
+	 margin:0;
+	 text-align:center;
+	 background-color: #d1d1e0;
+ }
+ 
+ nav {
+	 display: flex;
+	 flex-direction: row;
+	 background-color:#33ccff;
+	 align-items: center;
+	 height: 100px;
+ }
+ 
+ nav ul {
+	padding:0px;
+	background-color: #33ccff;
+	display:flex;
+	align-items: center;
+	color:#4d0099;
+	list-style-type:none;
+	
+	
+	
+ }
+ #left-side{
+	 flex-grow: 1;
+ }
+ nav ul li{
+	list-style-type: none;
+	background-color: #33ccff;
+	padding-left: 5px;
+	font-family:georgian;
+	font-size:20px;
+ }
+ nav ul li a{
+	text-decoration: none;
+	background-color: #33ccff;
+	color: white;
+ }
+ nav ul a:hover{
+	background-color:#ff80d5;
+ }
+ #hom{
+	background-color:white;
+	color:black;
+ }
+ 
+ div{
+	    text-align:center;
+		background-color: #6666ff;
+		
+	  }
+#njye{  
+        margin-top:0px;
+		padding-top:10px;
+	    font-family:lucida handwriting;
+		color:#000099;
+	  }
+h1{
+	    font-family:magneto;
+		text-align:center;
+	  }
+span{
+	    text-decoration:red dotted underline;
+	  }
+img{
+	width:300px;
+	border-radius:50%;
+}
+#logo{
+	border-radius:50%;
+	object-fit: cover;
+	width:60px;
+	height:60px;
+}
+#link{
+	background-color:orange;
+	color:white;
+	text-decoration:none;
+	padding:5px;
+	border-radius:10px;
+}
+#link:hover{
+	background-color:#33ff33;
+	color:white;
+	text-decoration: underline;
+	padding:5px;
+	border-radius:10px;
+}
+#link:visited{
+	background-color:#ff3333;
+	color:white;
+}
+#hob{
+	padding:10px;
+	width:1200px;
+	text-align:left;
+	background-color:#002266;
+	margin-left:60px;
+	border-radius:10px;
+}
+ul{
+	padding:15px;
+	list-style-type:square;
+	background-color:#ff80d5;
+	color:#4d0099;
+}
+ol{
+	padding:15px;
+   list-style-type:lower-alpha;
+   background-color:#3366ff;
+}
+ul li{
+	background-color:white;
+	margin:2px;
+	border-radius:5px;
+}
+ol li{
+	background-color:white;
+	margin:2px;
+	border-radius:5px;
+}
+#listl{
+	list-style-type:none;
+	text-decoration:none;
+}
+#able{
+	padding:10px;
+	width:1200px;
+	text-align:left;
+	background-color:#33ccff;
+	margin-left:60px;
+	border-radius:10px;
+}
+#able1{
+	width:50%;
+	text-align:left;
+	border-collapse:collapse;
+}
+#able2{
+	width:50%;
+	text-align:left;
+	border-collapse:collapse;
+}
+#able1 tr:nth-child(even){
+	background-color:#ffcc33;
+}
+#able2 tr{
+	border-bottom:1px solid blue;
+}
+#able2 th{
+	background-color:#33ff66;
+}
+
+.form{
+	display:grid;
+	width:50%;
+	grid-template-columns:1fr 3fr;
+	row-gap:20px;
+	padding:20px;
+}
+textarea{
+	height: 100px;
+}
+
+input,select{
+	padding:10px;
+	border-radius:8px;
+}
+
+button{
+	background-color:#33ccff;
+	border-radius:8px;
+}
+button:hover{
+	background-color:#33ff33;
+}
+
+#exit{
+	margin-bottom: 50px;
+	margin-left: 10px;
+	width: 0;
+}
+#exit a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow:10px 10px 5px #724923;
+	transition: box-shadow 0.15s, margin 0.15s;
+}
+#exit a img{
+	width: 85px;
+	height: 80px;
+}
+#exit a:active{
+	margin-left: 10px;
+	margin-top: 10px;
+	box-shadow: none;
+}
+#submit{
+	position: relative;
+	margin-left: 280px;
+	width: 30%;
+	height: 40px;
+	background-color:#33ccff;
+	border-radius:8px;
+}
+#submit:hover{
+	background-color:#33ff33;
+}
+	
+	</style>
+</head>
+<body>
+  <nav>
+       
+	<ul id="left-side">
+		<li><a href="#"><img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\stylesheet\images\IMG_20240812_132156_344.jpg" alt="our logo" id="logo"></a></li>
+		<li><a href="#" id="hom">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">contacts</a></li>
+	</ul>
+	<ul id="right-side">
+		<li><a href="#">Login</a></li>
+		<li><a href="#">Sign up</a></li>
+	</ul>
+    </nav> 
+
+    <div>
+	  <h2 id="njye">Hello I'm:</h2>
+	  <h1>KAREMERA CYUSA KEVIN<h1>
+	   <h2>a <span>pro</span>grammer</h2>
+	   <img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\stylesheet\images\IMG_20240812_132156_344.jpg" alt="our logo">
+	</div><br>
+	
+	<div id="hob">
+	 <h2>My favorite hobbies:</h2>
+		 <ul>
+		   <li>Editing</li>
+		   <li>Dancing</li>
+		   <li>Exploring</li>
+		   <li>Diving</li>
+		 </ul>
+	<h2>My favorite food:</h2>
+		 <ol>
+		   <li>Pasta</li>
+		   <li>Fish</li>
+		   <li>fries</li>
+		   <li>Eggs</li>
+		 </ol>
+    <h2>For more informatio:</h2>
+		 <ol id="listl">
+		   <li><a href="https://www.strikingly.com" target="_blank" title="strikingly">Web designer</a></li>
+		   <li><a href="https://www.youtube.com" target="_blank" title="youtube">youtube</a></li>
+		   <li><a href="https://www.google.com" target="_blank" title="google">Google browser</a></li>
+		   <li><a href="https://www.facebook.com" target="_blank" title="facebook">facebook chat</a></li>
+		 </ol>
+	</div><br><br>
+	
+	<div id="able">
+	<h1>My skills</h1>
+	<center>
+	 <table id="able1">
+			 <tr>
+				<th>My skills</th>
+				<th>How rated</th>
+			 </tr>
+			 <tr>
+			   <td>PROGRAMMING</td>
+			   <td>&starf;&starf;&starf;&star;&star;</td>
+			 </tr>
+			 <tr>
+			   <td>COOKING</td>
+			   <td>&starf;&star;&star;&star;&star;</td>
+			 </tr>
+			 <tr>
+			   <td>VIDEO MAKING</td>
+			   <td>&starf;&starf;&starf;&starf;&star;</td>
+			 </tr>
+			 <tr>
+				<td>FOOTBALL</td>
+				<td>&starf;&starf;&starf;&starf;&starf;</td>
+			 </tr>
+		</table>
+		
+	  <h1>School background:</h1>	
+	  <table id="able2">
+			 <tr>
+				<th>Years</th>
+				<th>Schools</th>
+				<th>option</th>
+			 </tr>
+			 <tr>
+			   <td>2009-2010</td>
+			   <td>La Promise</td>
+			   <td>Nursery</td>
+			 </tr>
+			 <tr>
+			   <td>2011-2016</td>
+			   <td>ECOLE PRIMAIRE DE KACYIRU</td>
+			   <td>Primary</td>
+			 </tr>
+			 <tr>
+			   <td>2017-2019</td>
+			   <td>COLLEGE SAINT MARIE REINE</td>
+			   <td>O'level</td>
+			 </tr>
+			 <tr>
+			   <td>2020-2023</td>
+			   <td>LYCEE MUHURA</td>
+			   <td>NETWORKING</td>
+			 </tr>
+			 <tr>
+			   <td>202-2024</td>
+			   <td>INES Ruhengeri</td>
+			   <td>Network Engineering</td>
+			 </tr>
+		</table>	
+	 </center>
+	</div>
+	
+	<h1>Choose your favorite color:</h1>
+	<a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank" title="w3schools" id="link">color picker</a><br><br>
+	<center>
+  <div class="form">
+        <label>first name:</label>
+            <input type="text",name="fname", placeholder="Your first name">
+		<label>second name:</label>
+            <input type="text",name="sname", placeholder="Your second name">
+		<label>Country:</label>
+			<select>
+			   <option>Rwanda</option> 
+			   <option>Uganda</option> 
+			   <option>Tanzania</option>
+			   <option>Nigeria</option>
+			   <option>Ethiopia</option>
+			   <option>Libya</option>
+			</select>  
+		<label>Comment:</label>
+			<textarea name="message"  placeholder="write something"></textarea>
+			<br>
+			<br>
+			<br>
+		<button id="submit">submit</button>
+  </div>	
+  </center>
+
+  <div id="exit">
+	<a href="WEB PROJECT/index.html"><img src="logos\power.png" alt="logos" class="power"></a>
+</div>
+	
+ </body>
+</html>

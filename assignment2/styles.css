@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+	
+	display:block;
+}
+
+.box1 {
+    background-color: #3498db;
+    width: 30%;
+}
+
+.box2 {
+    background-color: #e74c3c;
+	display:block;
+    width: 40%;
+}
+
+.box3 {
+    background-color:black;
+	display:inline-block;
+    width: 20%;
+}
+body.hidden{
+	display:none;
+}
